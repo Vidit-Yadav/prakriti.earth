@@ -133,11 +133,11 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                     "--framer-text-color":
                       "var(--extracted-r6o4lv, rgb(213, 238, 188))",
                   },
-                  children: "Made by ++",
+                  children: "",
                 }),
               }),
               className: "framer-1j3bcmi",
-              "data-framer-name": "Made by ++",
+              "data-framer-name": "",
               fonts: ["GF;Geist-regular"],
               layoutDependency: layoutDependency,
               layoutId: "I95:799;89:708",
@@ -169,7 +169,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                           "--framer-text-color":
                             "var(--extracted-r6o4lv, var(--token-85221088-9e29-4b0c-9543-d806ed6d5f2c, rgb(255, 255, 255)))",
                         },
-                        children: "Made by ++",
+                        children: "",
                       }),
                     }),
                   },
@@ -186,7 +186,7 @@ const Component = /*#__PURE__*/ React.forwardRef(function (props, ref) {
                           "--framer-text-color":
                             "var(--extracted-r6o4lv, rgb(213, 238, 188))",
                         },
-                        children: "Made by ++",
+                        children: "",
                       }),
                     }),
                     transformTemplate: undefined,
@@ -222,7 +222,7 @@ const css = [
  * @framerColorSyntax true
  */ const FramerqK_KLpbKS = withCSS(Component, css, "framer-CAtDD");
 export default FramerqK_KLpbKS;
-FramerqK_KLpbKS.displayName = "Made by ++";
+FramerqK_KLpbKS.displayName = "";
 FramerqK_KLpbKS.defaultProps = { height: 17, width: 70 };
 addPropertyControls(FramerqK_KLpbKS, {
   variant: {
