@@ -1,0 +1,8 @@
+/*
+ * Empty (framer/empty@0.1.0)
+ *
+ * Learn More: https://www.framer.com/asset-urls
+ */
+
+export * from "https://framerusercontent.com/modules/Yxs1c5tO4eQVafo0swLi/IhmQCimBFej4kBQTT1Ru/Empty.js"
+export { default } from "https://framerusercontent.com/modules/Yxs1c5tO4eQVafo0swLi/IhmQCimBFej4kBQTT1Ru/Empty.js"

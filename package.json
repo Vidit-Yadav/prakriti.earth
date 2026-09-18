@@ -1,0 +1,24 @@
+{
+  "name": "prakriti.earth",
+  "version": "1.0.0",
+  "description": "Production single-page website for Prakriti.earth",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/verify_production.js",
+    "audit": "python3 scripts/forensic_scan.py"
+  },
+  "keywords": [
+    "prakriti",
+    "climate",
+    "intelligence",
+    "amrv",
+    "environmental"
+  ],
+  "author": "Prakriti Team",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-core": "^25.11.0"
+  }
+}

@@ -1,0 +1,11 @@
+import{jsx as _jsx,jsxs as _jsxs}from"react/jsx-runtime";import{addPropertyControls,ControlType,motion}from"framer";import{containerStyles}from"https://framer.com/m/framer/default-utils.js@^0.45.0";import{useMemo}from"react";import{emptyStateStyle,stateParagraphStyle,stateTitleStyle}from"https://framer.com/m/framer/integrations-styles.js@0.2.0";const musicRegex=/^https?:\/\/music\.apple\.com\/([^\/]*)\/(album|playlist)(?:\/[^\/]*)?\/([\w.-]+)(?:\?.*i=(\d+))?/;/**
+ * APPLE MUSIC
+ *
+ * @framerIntrinsicWidth 400
+ * @framerIntrinsicHeight 150
+ *
+ * @framerSupportedLayoutWidth fixed
+ * @framerSupportedLayoutHeight fixed
+ */ export default function AppleMusic({urlType,url,style,...props}){const embedUrl=useMemo(()=>{var ref;const[,country,type,id,songId]=(ref=url.match(musicRegex))!==null&&ref!==void 0?ref:[null,"","","","",];if(!id)return null;if(urlType==="song"){return`https://embed.music.apple.com/${country}/${type}/id${id}?i=${songId}`;}else{return`https://embed.music.apple.com/${country}/${type}/id${id}`;}},[urlType,url]);return /*#__PURE__*/ _jsx(motion.div,{style:{...style,...containerStyles},...props,children:embedUrl?/*#__PURE__*/ _jsx("iframe",{src:embedUrl,width:"100%",height:"100%",frameBorder:"0",sandbox:"allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation",allow:"autoplay *; encrypted-media *;"}):/*#__PURE__*/ _jsxs(motion.div,{style:{...emptyStateStyle,...style},children:[/*#__PURE__*/ _jsx("h1",{style:stateTitleStyle,children:"Apple Music"}),/*#__PURE__*/ _jsx("p",{style:stateParagraphStyle,children:"Set an Apple Music URL in the Properties."})]})});};addPropertyControls(AppleMusic,{urlType:{type:ControlType.Enum,title:"URL",options:["album","song"],optionTitles:["Album","Song"],displaySegmentedControl:true,defaultValue:"song"},url:{type:ControlType.String,title:" ",placeholder:"https://music.apple.com/us/album/***/***",defaultValue:"https://music.apple.com/us/album/borderline/1497230760?i=1497230972"}});
+export const __FramerMetadata__ = {"exports":{"default":{"type":"reactComponent","name":"AppleMusic","slots":[],"annotations":{"framerContractVersion":"1","framerSupportedLayoutHeight":"fixed","framerIntrinsicWidth":"400","framerSupportedLayoutWidth":"fixed","framerIntrinsicHeight":"150"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./AppleMusic.map

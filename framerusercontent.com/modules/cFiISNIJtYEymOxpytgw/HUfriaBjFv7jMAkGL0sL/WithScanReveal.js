@@ -1,0 +1,3 @@
+import{jsx as _jsx}from"react/jsx-runtime";import{useStore}from"https://framer.com/m/store-FwprLG.js@ytGR5Ls14hfRWBHEow8X";const INTRO_FRAMES=60;const INTRO_FPS=30;const INTRO_DELAY=INTRO_FRAMES/INTRO_FPS;export function withDelayedReveal(Component){return props=>{const[store]=useStore();return /*#__PURE__*/_jsx(Component,{...props,animate:{opacity:store.showPreload?0:1},transition:{duration:.35,ease:"easeOut",delay:store.showPreload?0:1.2}});};}
+export const __FramerMetadata__ = {"exports":{"withDelayedReveal":{"type":"reactHoc","name":"withDelayedReveal","annotations":{"framerContractVersion":"1"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./WithScanReveal.map

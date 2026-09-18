@@ -1,0 +1,11 @@
+import{jsx as _jsx,jsxs as _jsxs}from"react/jsx-runtime";import{addPropertyControls,ControlType}from"framer";import{motion}from"framer-motion";import{containerStyles}from"https://framer.com/m/framer/default-utils.js@^0.45.0";import{emptyStateStyle,stateParagraphStyle,stateTitleStyle}from"https://framer.com/m/framer/integrations-styles.js@0.2.0";/**
+ * SIMPLECAST
+ *
+ * @framerIntrinsicWidth 400
+ * @framerIntrinsicHeight 200
+ *
+ * @framerSupportedLayoutWidth fixed
+ * @framerSupportedLayoutHeight auto
+ */ export default function Simplecast({embedId,theme,showShare,style,...props}){return(/*#__PURE__*/ _jsx(motion.div,{style:{...containerStyles,...style,height:200},...props,children:embedId?/*#__PURE__*/ _jsx("iframe",{height:"100%",width:"100%",frameBorder:"no",scrolling:"no",seamless:true,src:`https://player.simplecast.com/${embedId}?dark=${theme==="dark"?"true":"false"}&hide_share=${!showShare}`}):/*#__PURE__*/ _jsxs(motion.div,{style:{...emptyStateStyle,...style},children:[/*#__PURE__*/ _jsx("h1",{style:stateTitleStyle,children:"Simplecast"}),/*#__PURE__*/ _jsx("p",{style:stateParagraphStyle,children:"Set an episode ID in the Properties."})]})}));};addPropertyControls(Simplecast,{embedId:{title:"ID",type:ControlType.String,placeholder:"00000000-0000-0000-0000-000000000000",defaultValue:"87dc4001-95cb-49bf-a372-7c25539957e2",description:"Share an episode on [Simplecast](https://simplecast.com/) and copy its embed ID."},theme:{title:"Theme",type:ControlType.Enum,options:["light","dark"],optionTitles:["Light","Dark"],displaySegmentedControl:true},showShare:{title:"Share",type:ControlType.Boolean,enabledTitle:"Show",disabledTitle:"Hide",defaultValue:false}});
+export const __FramerMetadata__ = {"exports":{"default":{"type":"reactComponent","name":"Simplecast","slots":[],"annotations":{"framerSupportedLayoutWidth":"fixed","framerSupportedLayoutHeight":"auto","framerContractVersion":"1","framerIntrinsicWidth":"400","framerIntrinsicHeight":"200"}},"__FramerMetadata__":{"type":"variable"}}}
+//# sourceMappingURL=./Simplecast.map
